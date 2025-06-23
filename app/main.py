@@ -27,12 +27,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Guards against HTTP Host Header attacks
-app.add_middleware(
-    TrustedHostMiddleware,
-    allowed_hosts=["*"],
-)
-
 @app.on_event("startup")
 async def startup_event():
     try:
