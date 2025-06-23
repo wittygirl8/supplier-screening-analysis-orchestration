@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-REDIS_URL = "rediss://default:AU8mAAIjcDFlYmExMjZjYjUyZmU0MzUwYWU4ZmY3Y2NjNzAzMDZjNnAxMA@epic-egret-20262.upstash.io:6379"
+REDIS_URL = "redis://redis:6379/0"
 SESSION_SET_KEY = "queued_session_ids"
 SESSION_VALIDATION_SET_KEY = "queued_name_validation_ids"
 
